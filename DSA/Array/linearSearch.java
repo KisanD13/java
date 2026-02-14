@@ -11,16 +11,16 @@ public class linearSearch {
             System.out.print("Enyter the target: ");
             int target = sc.nextInt();
 
-            boolean flag = false;
+            boolean found = false;
 
             for (int i = 0; i < arr.length; i++) {
                 if (arr[i] == target) {
-                    flag = true;
+                    found = true;
                     break;
                 }
             }
 
-            if (flag) {
+            if (found) {
                 System.out.println("Target exists in array");
             } else {
                 System.out.println("Target does not exist in array");
