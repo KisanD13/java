@@ -6,16 +6,19 @@ public class problem2 {
     public static void main(String[] args) {
         int[] arr = { 2, 4, 8, 71, 7, 98 };
 
-        solution(arr);
-    }
+        print(arr);
 
-    public static void solution(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 == 0)
                 arr[i] += 10;
             else
                 arr[i] *= 2;
         }
+
+        print(arr);
+    }
+
+    public static void print(int[] arr) {
 
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
