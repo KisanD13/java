@@ -7,9 +7,7 @@ public class problem1 {
         int[] arr = { 2, 4, 8, 71, 7, 98 };
 
         solution(arr);
-    }
 
-    public static void solution(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             if (i % 2 == 0)
                 arr[i] += 10;
@@ -17,6 +15,10 @@ public class problem1 {
                 arr[i] *= 2;
         }
 
+        solution(arr);
+    }
+
+    public static void solution(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
