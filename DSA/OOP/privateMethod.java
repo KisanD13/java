@@ -12,12 +12,14 @@ class Students {
 
 public class privateMethod {
     public static void main(String[] args) {
-        Students s1 = new Students();
-        s1.print();
+        Student s1 = new Student();
+        System.out.println(s1.name);
+        // Students s1 = new Students();
+        // s1.print();
 
-        s1.name = "Sagar";
-        s1.cgpa = 6.8;
+        // s1.name = "Sagar";
+        // s1.cgpa = 6.8;
 
-        s1.print();
+        // s1.print();
     }
 }
