@@ -11,10 +11,10 @@ class Student {
 
 public class UserDefinedDatatype {
     // public static class Student {
-    //     // Studen basically is type of own
-    //     String name;
-    //     int role;
-    //     double cgpa;
+    // // Studen basically is type of own
+    // String name;
+    // int role;
+    // double cgpa;
     // }
 
     public static void main(String[] args) {
@@ -30,7 +30,6 @@ public class UserDefinedDatatype {
             System.out.println(s1.name);
 
             // System.out.println(s1.cgpa); // 6.8
-
             // s1.cgpa = 7;
             // System.out.println(s1.cgpa); // 7.0
 
