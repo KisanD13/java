@@ -13,6 +13,7 @@ class Students {
 public class privateMethod {
     public static void main(String[] args) {
         Student s1 = new Student();
+        s1.name = "Sagar";
         System.out.println(s1.name);
         // Students s1 = new Students();
         // s1.print();

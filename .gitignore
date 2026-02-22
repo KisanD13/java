@@ -1,5 +1,6 @@
 out/
 PersonalP.iml
 .idea/
+*.iml
 
 *.class
