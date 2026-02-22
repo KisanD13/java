@@ -6,6 +6,6 @@ public class intering {
 
         str = "Kisan";
 
-        System.out.println(str);
+        System.out.println(str.compareTo(str));
     }
 }
