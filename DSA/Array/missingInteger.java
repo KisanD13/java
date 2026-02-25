@@ -16,6 +16,6 @@ public class missingInteger {
         int[] arr = { 1, 2, 4, 5 };
         int n = 5;
 
-        findMissing(arr, n);
+        System.out.println(findMissing(arr, n));
     }
 }
