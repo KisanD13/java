@@ -2,25 +2,40 @@ package DSA.OOP;
 
 class Students {
     String name;
-    private int role = 1112;
     double cgpa;
+    private int role = 1112;
 
     void print() {
         System.out.println(name + " " + role + " " + cgpa);
     }
+
+    //getter
+    int getRole() {
+        return role;
+    }
+
+    //setter
+    void setRole(int x) {
+        role = x;
+    }
 }
 
 public class privateMethod {
-    public static void main(String[] args) {
-        Student s1 = new Student();
-        s1.name = "Sagar";
-        System.out.println(s1.name);
-        // Students s1 = new Students();
-        // s1.print();
+    static void main(String[] args) {
+//        Student s1 = new Student();
+//        s1.name = "Sagar";
+//        System.out.println(s1.name);
 
-        // s1.name = "Sagar";
-        // s1.cgpa = 6.8;
+        Students s2 = new Students();
+        s2.print();
 
-        // s1.print();
+        s2.name = "Sagar";
+        s2.cgpa = 6.8;
+        s2.print();
+
+        System.out.println("role befor setter " + s2.getRole());
+
+        s2.setRole(102);
+        System.out.println("role befor setter " + s2.getRole());
     }
 }
