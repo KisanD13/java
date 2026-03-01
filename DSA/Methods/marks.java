@@ -20,7 +20,9 @@ public class marks {
         StudentData s1 = new StudentData(4);
         StudentData s2 = new StudentData(3);
 
-        int[] arr = {1, 2, 3, 4, 5, 6};
+        int[] arr = { 1, 2, 3, 4, 5, 6 };
         StudentData s3 = new StudentData(arr);
+
+        System.out.println(s1);
     }
 }
