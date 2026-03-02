@@ -25,7 +25,8 @@ public class constructor {
         }
 
         void print() {
-            System.out.println("name " + name + " Seats " + seats + " length " + length + "m");
+            int seats = 2;
+            System.out.println("name " + name + " This Seats " + this.seats + " Seats " + seats + " length " + length + "m");
         }
     }
 
