@@ -2,16 +2,6 @@ package DSA.LinkLIst;
 
 //traverse entire list only with head
 
-class Node {
-    int val;
-    Node next;
-
-    Node(int val) {
-        this.val = val;
-    }
-}
-
-
 public class DisplayList {
 
     public static void display(Node head) {
@@ -20,7 +10,7 @@ public class DisplayList {
 //            System.out.print(temp.val + " -> ");
 //            temp = temp.next;
 //        }
-        
+
         //recursive
         if (head != null) {
             System.out.print(head.val + " -> ");
