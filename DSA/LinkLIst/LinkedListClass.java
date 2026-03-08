@@ -14,6 +14,17 @@ class LinkedList {
     Node tail; // null
     int size;
 
+    void display() {
+        if (head == null) return;
+
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.val + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
     boolean search(int val) {
         if (head == null) return false;
 
@@ -38,7 +49,6 @@ class LinkedList {
         return -1;
     }
 
-
     void addAtTail(int val) {
         Node temp = new Node(val);
         if (tail == null) head = tail = temp;
@@ -48,17 +58,6 @@ class LinkedList {
         }
 
         size++;
-    }
-
-    void display() {
-        if (head == null) return;
-
-        Node temp = head;
-        while (temp != null) {
-            System.out.print(temp.val + " ");
-            temp = temp.next;
-        }
-        System.out.println();
     }
 
     void addAtHead(int val) {
