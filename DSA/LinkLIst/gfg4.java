@@ -31,9 +31,29 @@ public class gfg4 {
         ll.display();
 
 //        two pointer one pass solution
-        Node slow = ll.head;
-        Node fast = ll.head;
-        deletekthFromEnd(slow, fast, 2);
+//        Node slow = ll.head;
+//        Node fast = ll.head;
+//        deletekthFromEnd(slow, fast, 2);
+//        ll.display();
+
+        Node head = ll.head;
+        Node temp = head;
+        Node removableNode = head;
+        int size = 0;
+        int n = 2;
+
+        while (temp != null) {
+            temp = temp.next;
+            size++;
+        }
+        if (n == size) {
+            head = head.next;
+        }
+        for (int i = 1; i < size - n; i++) {
+            removableNode = removableNode.next;
+        }
+        removableNode.next = removableNode.next.next;
         ll.display();
+
     }
 }
