@@ -11,7 +11,13 @@ public class AbstractAnonymousInnerClass {
                 System.out.println("show in anonymous but outside abstract method");
             }
         };
-
         obj.show();
+
+        ABC obj1 = new ABC() {
+            public void show() {
+                System.out.println("show in anonymous but outside abstract method");
+            }
+        };
+        obj1.show();
     }
 }
