@@ -6,7 +6,12 @@
 
     <!-- bean definitions here -->
 
- <bean id="alien1" class="org.example.Alien" scope="prototype"/>
+<!-- <bean id="alien1" class="org.example.Alien" scope="prototype"/>-->
+    <bean id="alien1" class="org.example.Alien">
+        <property name="age" value="21" />
+<!--        calling the setter method-->
+    </bean>
+<!--    scope prototype means it will create multiple object but by default iyt create single object and its scope is singleton-->
 <!-- <bean id="alien2" class="org.example.Alien"/>-->
  <bean id="lap" class="org.example.Laptop"/>
 
