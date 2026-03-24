@@ -2,5 +2,6 @@ out/
 PersonalP.iml
 .idea/
 *.iml
+.vscode
 
 *.class

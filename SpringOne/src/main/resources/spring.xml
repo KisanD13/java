@@ -9,7 +9,9 @@
 <!-- <bean id="alien1" class="org.example.Alien" scope="prototype"/>-->
     <bean id="alien1" class="org.example.Alien">
         <property name="age" value="21" />
-<!--        calling the setter method-->
+<!--        calling the setter method , value is used because it's a primitive value for object we need to  use ref like below -->
+        <property name="laptop" ref="lap" />
+<!--        lap in ref="lap" is same used below , basically its referring to lap id bean-->
     </bean>
 <!--    scope prototype means it will create multiple object but by default iyt create single object and its scope is singleton-->
 <!-- <bean id="alien2" class="org.example.Alien"/>-->
