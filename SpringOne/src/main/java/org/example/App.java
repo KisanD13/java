@@ -4,13 +4,14 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class App {
-    public static void main(String[] args) {
+     static void main(String[] args) {
         System.out.println("Hello World!");
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");// creates container
         Alien obj = context.getBean("alien1", Alien.class);
         obj.code();
         // obj.setAge(20);
         System.out.println(obj.getAge());
+        System.out.println(obj.getWeight());
 
         obj.getLaptop().compile();
 

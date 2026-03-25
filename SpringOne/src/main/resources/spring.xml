@@ -6,14 +6,33 @@
 
     <!-- bean definitions here -->
 
-<!-- <bean id="alien1" class="org.example.Alien" scope="prototype"/>-->
+    <!--    scope prototype means it will create multiple object but by default iyt create single object and its scope is singleton-->
+    <!-- <bean id="alien1" class="org.example.Alien" scope="prototype"/>-->
+
     <bean id="alien1" class="org.example.Alien">
-        <property name="age" value="21" />
-<!--        calling the setter method , value is used because it's a primitive value for object we need to  use ref like below -->
-        <property name="laptop" ref="lap" />
-<!--        lap in ref="lap" is same used below , basically its referring to lap id bean-->
+    <!--        <property name="age" value="21" />-->
+    <!--        calling the setter method , value is used because it's a primitive value for object we need to  use ref like below....this is setter injection -->
+
+    <!--        <property name="laptop" ref="lap" />-->
+    <!--        lap in ref="lap" is same used below , basically its referring to lap id bean-->
+
+    <!--        ..............................-->
+    <!--        <constructor-arg index="0" value="22" />-->
+    <!--        <constructor-arg index="1" value="222" />-->
+    <!--        <constructor-arg ref="lap"/>-->
+
+    <!--
+        * in constructor injection, we use constructor arg when if there is only one variable is there then we can use only value or ref
+        * if there are multiple variable or multiple object or both, then we have to specify with index
+        * if we specify index then it will not matter where we put,
+        * we can also constructor-arg with name and value, but it also needs to be in sequence as it is defined the class
+
+    -->
+
+        <constructor-arg name="weight" value="222" />
+        <constructor-arg name="age" value="22" />
+        <constructor-arg ref="lap"/>
     </bean>
-<!--    scope prototype means it will create multiple object but by default iyt create single object and its scope is singleton-->
 <!-- <bean id="alien2" class="org.example.Alien"/>-->
  <bean id="lap" class="org.example.Laptop"/>
 
