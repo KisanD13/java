@@ -32,8 +32,6 @@ public class SpringBootSampleApplication {
         Alien alien = context.getBean(Alien.class);
         alien.coding();
 
-//        Alien alien1 = context.getBean(Alien.class);
-//        alien1.coding();
     }
 
 }
