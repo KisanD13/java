@@ -5,7 +5,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class App {
      public static void main(String[] args) {
-        System.out.println("Hello World!");
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");// creates container
         Alien obj = context.getBean("alien1", Alien.class);
         obj.code();
@@ -13,10 +12,10 @@ public class App {
         System.out.println(obj.getAge());
         System.out.println(obj.getWeight());
 
-        obj.getComputer().compile();
-
         // Alien obj1 = (Alien) context.getBean("alien1", Alien.class); //object is
         // created one time but obj and obj1 is referring to that
         // System.out.println(obj1.getAge());
+
+         Desktop desk = context.getBean(Desktop.class);
     }
 }
