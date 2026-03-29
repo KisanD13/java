@@ -1,6 +1,5 @@
-package org.example.springbootsample;
+package org.example.springbootsample.model;
 
 public interface Computer {
-
     public void compile();
 }
